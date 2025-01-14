@@ -4,17 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "build": "npx tsc",
+    "start": "npx tsc && node ./dist/index.ts",
+    "dev": "nodemon"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
     "express": "^4.19.2",
-    "mongoose": "^8.5.0",
-    "nanoid": "^5.0.7",
+    "mongoose": "^8.9.5",
+    "nanoid": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^22.10.6",
+    "dotenv": "^16.4.7",
     "nodemon": "^3.1.9",
-    "shortid": "^2.2.16"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
   }
 }
