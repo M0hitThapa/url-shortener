@@ -1,14 +1,15 @@
 import * as React from 'react';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Container from './components/Container/Container';
 
-interface IAppProps {}
-
-const App: React.FunctionComponent<IAppProps> = () => {
+const App: React.FunctionComponent = () => {
   return (
     <>
-    <Header />
-    <Footer />
+      <Header />
+      <Container />
+      <Footer />
+      
     </>
   );
 };
